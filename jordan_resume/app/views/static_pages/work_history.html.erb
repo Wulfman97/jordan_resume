@@ -1,0 +1,20 @@
+<h1>Work History</h1>
+<p>I've been helping out with my family's fast food restraunt inside the Salt Lake City Community College for about 8 years.</p>
+<p>I did a research project with L3 Communication for my senior project writing a diffusion algorithm to estimate an unkown location</p>
+
+<table class="table2">
+  <tr>
+    <th>Employer</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+    <% @work.each do |f| %>
+      <td><%= f.employer_name %></td>
+      <td><%= f.start %></td> 
+      <td><%= f.end %></td>
+      <td><%= f.salary %></td>
+  </tr>
+    <% end %>
+</table>

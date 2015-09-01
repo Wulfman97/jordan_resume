@@ -1,15 +1,53 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+
+body {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAwFBMVEUAAAAITozqICwIUJAGN2QHQ3gIUZIHRn7tIC3wIS0CGCwGQXUEJkQITInOHCcBCxbXHSkFMFdGRkbiHysGOmnCGyUFNF4DHzgISYMABgsFLlMEIz9tDxUGPW4cHBxDCQ0UFBQ/Pz+1GSOPFBtYDBELCwsBDxs4ODgoKCgEKUsrBggCEyJ+ERiiFh8DGzE4CAtLCg4SAwStGCF7ERhnDhQvLy8pBgglJSUyBwoeBAZnDhNHCg6LExtbDBGkFh+XFRyTa/dgAAALJElEQVR4nO2cC3uaPBSAUcAboqJWUatVW22pre16376t/f//6ku4yEkIBItI1533ebrOFGJ4DcnJAVQUBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBPnLGLVDRswfrL5mjZ3hJmHncNecW/lF0NUdFQeUb0p+YcXURjH79sNdh8doa+GYpR3qAJTralhui3cdV8JNHPEm34u1CmT1w/JRCVAR7wt9WsdpbrE0KkDWNCzfVOSyqmLP35ctlGWE5YwsVbyvLfb8fRnC01APy+HpGScL9ixDvMn3AsoqVcNyZsxCWR5DeLrBWc+UyzJUlOVhy2VpQNY/MWZt1c/LGv/LoQMcs+CAFCdrY1d2EXzzKK0tmFhZuiqVRdaGTatvGMZ04MStiL4VjZjQQZmmkfWPsYFO4JTWR1kRGFlwStNQVgRGlgb+gLKiMAtpOP+jLMrPl7frn7tXcMGsOqP2etPYuGnPlLJGZIfGutC5sDmwPAYETetTtMHAcoYN90iuL84fWh3Cyfvyztvl5elj2eoROsvTH7TgN9mg1yv3Oq2Hl6Dep/dWr07ptR7JS21gTZkFc6VScXOjk1SyNppuqzTUqqi2mzdcN62BRps86O9SNuutQ46CvNPEz083xtOqTRZTpm1X9Sk9KnqUWl/TNGvyGVm2GgM5GvKe/5HDrXnU6x1FOXt86NTconK5TMqWtI6y95K+7vnV3pBtyh50myE90JIAtcrK2uWzSM9bh+l2HWRKadShwYaOiafJwDBB0ZbuZME3jRyeuX8fbVdKsdBY+a5eDql1etQTU6JQoWFB/cmr9zEsq50oiiM05duBskqGrpPeYLqHR/qEPnBT7nBFRGWxvVQ3aa+DJW7q2Yh9U3eb8d6yJgkV0up+liG1Mk+dFVOuf3j1ngJZHWZtx79Jg5XF9UDSBWj/giuiiCxBpe6paabYZi+sJFl0dOhF/LCy3hTlFsp6j8gq9xJlDVlZ0Q3oAARXRClklUzahoSTpsQtItKR9K6ue5msP4qyBB2ufhuVVU6UtZXJmuzfs2h/lclilqfpSDqv3TBbJutUUVpQ1k1UVi1xzGrLZFkCWX2ZrGYeshJ7lpFCFpHTgbL+CGT9SBgaVUUmiwb7/GkoleXkIWuQ9K56Clm/2U1qPwWyrtn8O3NUU6ksQyAreZe8etYkoUb1E7LKSlRW/U5pRw8uvBgvOfLqZ2QNBbK4iXZ/WUqVCdWizZTJOmc2qbVEss7I2FjiQoJq342/B/IjtwWyEk+Ikj+FciuGkj5gBp1PyFKcqa7rxpS2vW/YzKchkkXCdzjRcT2LBqBRWfekYDSCMyJzw4JElppKFvdB03rhX/uNBonY21llsbRtrjpGVq1eXt6cPoEyOsBDWUu/nkdeFpd1gIl0PijlunhlJDsNyfb2dApnTPd6CPxw/BtRYJyaXRYzSfOyaie/3G3A9Fd/TCHrwpMFGx8nS/VOTgOq2Mhmw6mbl4dXtl0RgpQQf3QZSehZNKZyAYEVLRPJuvmsLK+oCYu2UVnwdcmvBiQX3alpDWX5C0GDF5qNhJ7ln06srKf8ZU2isuCtXsGyBfQsN9xoCsbI6WFl8et7KOtaIOtCLOt3NlkTblsughem83lZFic8s6y2Na2apl01+pYz2Ta2E+ayFC8r2AvKehPLOj+gLCcii5krgnQ+lEUFwnHNS3BllFX1550g38dOwFRWWSJLEcv6yFUWvBNgl87nZTGfeyO7rFHyQkNn81lfR9ZQMBwxAzyVBQdzdZNdVuySzXsHcua/AFnBUoaXBSKJnazbXMespqiqJFmltbdNltkwPs0UyHoDGYUgv54kK4jg3w8oa5JOVoOTxYQXo+yykjMdVNYdmx6OyKrFyHqoZZLF2BhGZDmiqsA9q64suI/pb6NnkKVLZZ0BWcEimbGTRtZ9Jln0IlNSzwouaoGb5dzQ4dCyJCl98pb3n5S1zCYLdh26Nkwli4uzImvFwmXxY1awzcnhZKlKRBY/pLlMjilL5S6+uW95wV7/8+gdVVYpKmsoqgp0N5VfPx5alu0Mh02NuXOYyPojlFWWymIuYpztLQtO06ZAlijb43CyRDNflqwDVOOV8HecPX1SVudwsuyorK1IlnU8WWa0iMo6LV5WNSpLmEeE2VP+2mIghk9AfVKWf1a3uZ4llfVDLIvJGd7tLctKlsX0f0dQDS8rGLOyZEqjPWu4r6yXvGW5pxQnay2TVY2RBarJIsu/12fMyXqUybo7rKxKRFZJIAs+7rOT1edkwdd+V2CeqcogSx1GWplK1pk4KJXJgveSJcuKxEx8pjS4dYgfo7SorEncrfj7ynKzs43pvqfhPTuY15a/b85v39+BK6GsvjMeaJoVuU1SIItf58XJMrjTjrlcZk4HAw1eBskWOqimbbJX31LJumBiVO+6YnjXn1cUnQ2DbKORQha9lycpBx8k//gglL2bKnoN+fDLHWmcdRG9DssjCB0CzBhZ8MEmmjY2OFnwydZAFr9wTrr1rFTa//4suSxpBJ9NlrqWy6LXR6ecLNED5rys5GRdHj1LvDY8nKyGWJbDyeBlwYc1gzELBpy2knRPWF6y7mWy/ssky/1GC4GsJierz8kC8nahQ/GyzlLEWVl61lYsa8j1HD467yfLcscjiay9xyzJzc9E1rUghuKXO62awFBKWfxp6EfwMJ9O41d+3dfn/s7LmqaQte/jw/ILFkBM7EIaXskRIYizdm+x4WT56xLw6Ip7pvIRPXxmOvhuGihLSyFr31u7JdcNU8iiaeX7z8tyr7rAI/fPDbCedzufkyAr+G4kKGss7Qnsg2mpcCoJNbqyOsHTKLU6yJT6+Fd8lt5zF7UQ9jR882RF38v7nh545MHHHY6mFRpdTDifYJfdAyw2LfMizwoVLIuz9n8wvWnYpl2Ngbb8trXjIdjppNPptFonrU7ZF3h/e9KhDz6RwhPyv9YJG9R7N5SMLN3NXPvBO/3HdD/dQaUSlO2+KqrqPdWklqpV2vm2u/1Um45RWvh692jUlB6HrutVU3UzmVbkeHRG1tG/LenlPuYPzGkIHqObNJ2xNXaak2FjvSttD0mhNW7Cbxsbjgfj5jZ4GKntNB1Kc7j2/0qq2G5Go3ZD8HVa7W1Mq4SX/QvnByPrR9HN2VFoz4qDlVV0a0KyjVk5wcgqy7c/FlDW3rNhbhQva91sRB6/ZC7OFvKdNjctAdBVT15HDozJ3KqSmZ7OjzqFTIdMMHGAe0r356FeiwKHrJa8jhzYrYjUMP5iiPkuxnyRLQ3DyP+oJK97S+GV0qPSkclayuvIgb9TVvBw65GRPez6RWWdF9Eq6fObxciSprN+F9Eq6VN2xchaymQ9FtEqaVa5mDjrQybrVxGtkty27icVj86pJPdXl1eRB9uK+AtdvG6lVgbyKnLgrc6y++oanwd5FXkwGvR127ZNBtujamhFfVH6+ce5x8fHx+3t+4PH++3H+c3pxd1PeQW5MgoouB0IgiAIgiAIgiAIgiAIgiAIgiAIkj8r/weJZd5dKIvL58Ws272cd7v092LVfe12u0W37AtyuVgo3avF8+L5eXF5eUX++9ol/3bn86Jb9vVYdZ8XpEN1n7uvi8vu1eUlFUbMdbtXRTft6/HcXZCuNCNdiWgjv589YYvLFQ5fPMQQEbO4IoPUgqjyfuZEWbc7L7ptX47VTJnPZvP5TJm9rujPajYjv8m/s6KbhvztrGbz1Wy1mq9Wr8pMuSI/pKfNi27VV+V5Rk6/1/krsXZFZD0rMzwJEQRBEARBEAT5h/gfeenkQVuxMOcAAAAASUVORK5CYII=)no-repeat center center fixed ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+  text-align: center;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.table{
+  border:1px solid white;
+  text-align: center;
+  width:50%;
+  height: auto;
+  margin:auto;
+}
+
+.table2{
+  border:1px solid white;
+  text-align: center;
+  width:75%;
+  height: auto;
+  margin:auto;
+}
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
